@@ -1,7 +1,7 @@
 import HomeLayout from "../../../layouts/HomeLayout";
-import AboutSection from "../../../components/sections/AboutSection";
-import HeroSection from "../../../components/sections/HeroSection";
-import ProjectSection from "../../../components/sections/ProjectSection";
+import AboutSection from "../../../components/sections/HomeSections/AboutSection";
+import HeroSection from "../../../components/sections/HomeSections/HeroSection";
+import ProjectSection from "../../../components/sections/HomeSections/ProjectSection";
 
 const Home = () => {
   return (

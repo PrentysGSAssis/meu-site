@@ -1,4 +1,4 @@
-import CardProjeto from "../../ui/CardProjeto";
+import CardProjeto from "../../../ui/CardProjeto";
 
 const dadosDoProjeto = {
   title: "Meu Projeto JS",
