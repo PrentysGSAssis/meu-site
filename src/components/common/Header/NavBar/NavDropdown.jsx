@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export const NavDropdown = ({
   title,
   action1,
@@ -21,15 +23,15 @@ export const NavDropdown = ({
 
       <ul className="dropdown-menu">
         <li>
-          <a className="dropdown-item" href={href1}>
+          <Link className="dropdown-item" to={href1}>
             {action1}
-          </a>
+          </Link>
         </li>
 
         <li>
-          <a className="dropdown-item" href={href2}>
+          <Link className="dropdown-item" to={href2}>
             {action2}
-          </a>
+          </Link>
         </li>
 
         <li>
@@ -37,9 +39,9 @@ export const NavDropdown = ({
         </li>
 
         <li>
-          <a className="dropdown-item" href={href3}>
+          <Link className="dropdown-item" to={href3}>
             {action3}
-          </a>
+          </Link>
         </li>
       </ul>
     </li>

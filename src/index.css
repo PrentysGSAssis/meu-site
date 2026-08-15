@@ -9,3 +9,7 @@
   box-sizing: border-box;
   padding: 0 16px;
 }
+
+html {
+  scroll-behavior: smooth;
+}

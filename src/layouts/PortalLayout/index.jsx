@@ -1,7 +1,7 @@
 import Footer from "../../components/common/Footer";
 import Header from "../../components/common/Header";
 
-const HomeLayout = ({ children }) => {
+const PortalLayout = ({ children }) => {
   return (
     <>
       <Header />
@@ -10,9 +10,9 @@ const HomeLayout = ({ children }) => {
         {children}
       </main>
 
-      <Footer />
+      <Footer/>
     </>
   );
 };
 
-export default HomeLayout;
+export default PortalLayout;

@@ -1,9 +1,13 @@
 import { NavBar } from "./NavBar/NavBar";
+import "./header.styles.css";
 
-const Header = () => {
+const Header = ({ children }) => {
   return (
     <header>
       <NavBar />
+
+      { children }
+      
     </header>
   );
 };

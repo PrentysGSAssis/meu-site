@@ -1,15 +1,10 @@
-import { BrowserRouter, Routes, Route } from "react-router";
 import Home from "./routes/Portal/Home";
+import SaSS from "./routes/Portal/SaaS";
 
 function App() {
   return (
-
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
   
+  <Home/>
 
   );
 }

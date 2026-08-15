@@ -1,19 +1,22 @@
-import { NavDropdown } from "./NavDropdown";
 import { NavItem } from "./NavItem";
+import "./NavBar.styles.css";
 
 export const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-md bg-body-tertiary">
+    <nav className="navbar navbar-expand-md">
       <div className="container-fluid">
-        <img
-          width="50"
-          height="44"
-          src="../../../../public/favicon.png"
-          alt=""
-        />
-        <a className="navbar-brand" href="#">
+        <div className="pe-3">
+          <a href="/">
+            <img
+              className="navbar-brand"
+              width="50"
+              height="44"
+              src="favicon.png"
+              alt=""
+            />
+          </a>
           <span className="navbar-text fs-4 ps-2">Reino Confeitaria</span>
-        </a>
+        </div>
 
         <button
           className="navbar-toggler"
@@ -31,17 +34,9 @@ export const NavBar = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <NavItem title="Home" href="/" />
 
-            <NavItem title="Sobre" href="#sobre" />
+            <NavItem title="Sobre" href="/#sobre" />
 
-            <NavDropdown
-              title="Opções"
-              action1="Minha Conta"
-              href1="/perfil"
-              action2="Configurações"
-              href2="/settings"
-              action3="Sair"
-              href3="/logout"
-            />
+            <NavItem title="MeuSistema" href="" />
           </ul>
 
           <form className="d-flex" role="search">

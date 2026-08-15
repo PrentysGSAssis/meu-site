@@ -1,4 +1,4 @@
-import CardProjeto from "../../../ui/CardProjeto";
+import Card from "../../../ui/Card";
 
 const propsCardProjeto = {
   title: "Meu Projeto JS",
@@ -11,7 +11,9 @@ const propsCardProjeto = {
 const ProjectSection = () => {
   return (
     <section id="projeto">
-      <CardProjeto {...propsCardProjeto} />
+      <h3>Seção de Projetos</h3>
+      <p>Lorem</p>
+      <Card {...propsCardProjeto} />
     </section>
   );
 };

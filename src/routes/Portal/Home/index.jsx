@@ -1,15 +1,17 @@
-import HomeLayout from "../../../layouts/HomeLayout";
-import AboutSection from "../../../components/sections/HomeSections/AboutSection";
-import HeroSection from "../../../components/sections/HomeSections/HeroSection";
-import ProjectSection from "../../../components/sections/HomeSections/ProjectSection";
+import PortalLayout from "../../../layouts/PortalLayout";
+import AboutSection from "../../../components/sections/Portal/AboutSection";
+import HeroSection from "../../../components/sections/Portal/HeroSection";
+import ProjectSection from "../../../components/sections/Portal/ProjectSection";
+import ContactSection from "../../../components/sections/Portal/ContactSection";
 
 const Home = () => {
   return (
-    <HomeLayout>
+    <PortalLayout>
       <HeroSection/>
       <AboutSection/>
-      <ProjectSection/>    
-    </HomeLayout>
+      <ProjectSection/>
+      <ContactSection/>
+    </PortalLayout>
   );
 };
 
