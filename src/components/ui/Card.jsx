@@ -1,26 +1,38 @@
-const Card = ({ cardWidth, ...props }) => {
+// Desestruturação clara das props com valores padrão (Default Params)
+const Card = ({ 
+  title = "Título do Projeto", 
+  text = "Descrição do projeto...", 
+  linkUrl = "#", 
+  linkText = "Acessar", 
+  imageSrc = "https://placehold.co/400x250",
+  imageAlt
+}) => {
   return (
-    <div className="card" style={{ width: cardWidth || "18rem" }}>
+    
+    <div className="card h-100 shadow-sm border-0">
       <img
-        src={props.imageSrc || "https://placehold.co/250x250"}
-        className="card-img-top"
-        alt={props.title || "Card image"}
+        src={imageSrc}
+        className="card-img-top object-fit-cover"
+        alt={imageAlt || title}
+        height="200"
       />
 
-      <div className="card-body">
-        <h5 className="card-title">{props.title || "Card title"}</h5>
-
-        <p className="card-text">
-          {props.text ||
-            "Some quick example text to build on the card title and make up the bulk of the card’s content."}
+      
+      <div className="card-body d-flex flex-column">
+        <h5 className="card-title fw-bold">{title}</h5>
+        
+        
+        <p className="card-text text-muted flex-grow-1">
+          {text}
         </p>
 
         <a
-          href={props.linkUrl || "#"}
-          className="btn btn-primary"
+          href={linkUrl}
+          className="btn btn-outline-primary mt-auto w-100"
           target="_blank"
+          rel="noopener noreferrer"
         >
-          {props.linkText || "Go somewhere"}
+          {linkText}
         </a>
       </div>
     </div>

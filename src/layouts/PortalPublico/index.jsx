@@ -1,18 +1,21 @@
 import Footer from "../../components/common/Footer";
 import Header from "../../components/common/Header";
 
-const PortalLayout = ({ children }) => {
+import { Outlet } from "react-router";
+
+
+const PortalPublico = () => {
   return (
     <>
       <Header />
-
       <main>
-        {children}
+      
+        <Outlet/>
+        
       </main>
-
       <Footer/>
     </>
   );
 };
 
-export default PortalLayout;
+export default PortalPublico;

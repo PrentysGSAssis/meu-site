@@ -1,21 +1,22 @@
-import { NavItem } from "./NavItem";
+import { Link } from "react-router";
+import NavItem from "./NavItem";
 import "./NavBar.styles.css";
 
-export const NavBar = () => {
+const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-md">
       <div className="container-fluid">
-        <div className="pe-3">
-          <a href="/">
+        <div className="d-block align-items-center">
+          {/* 1. Transformamos o <a> da logo em um <Link> */}
+          <Link to="/">
             <img
               className="navbar-brand"
               width="50"
               height="44"
               src="favicon.png"
-              alt=""
+              alt="Logo Reino Confeitaria"
             />
-          </a>
-          <span className="navbar-text fs-4 ps-2">Reino Confeitaria</span>
+          </Link>
         </div>
 
         <button
@@ -32,11 +33,14 @@ export const NavBar = () => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <NavItem title="Home" href="/" />
+            {/* 2. Substituímos 'href' por 'to' para alimentar nosso NavItem corretamente */}
+            <NavItem title="Meu Portfólio" to="/" />
 
-            <NavItem title="Sobre" href="/#sobre" />
+            <NavItem title="O Meu Projeto Principal" to="/meu-sistema" />
 
-            <NavItem title="MeuSistema" href="" />
+            {/* Atualizamos aqui para apontar para a rota do sistema que configuramos no App.jsx */}
+            <NavItem title="Login" to="/login" />
+
           </ul>
 
           <form className="d-flex" role="search">
@@ -56,3 +60,5 @@ export const NavBar = () => {
     </nav>
   );
 };
+
+export default NavBar;

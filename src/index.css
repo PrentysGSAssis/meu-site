@@ -1,15 +1,30 @@
-#root {
-  width: 1920px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding: 0 16px;
+h1{
+  color: var(--color-primary);
 }
 
-html {
-  scroll-behavior: smooth;
+:root {
+  /* Cores principais */
+  --color-primary: #2563eb;
+  --color-primary-light: #60a5fa;
+  --color-primary-dark: #1d4ed8;
+
+  /* Cores secundárias */
+  --color-secondary: #14b8a6;
+  --color-secondary-light: #5eead4;
+  --color-secondary-dark: #0f766e;
+
+  /* Neutras */
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+
+  /* Texto */
+  --color-text: #1e293b;
+  --color-text-muted: #64748b;
+  --color-text-inverse: #ffffff;
+
+  /* Status */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
 }
